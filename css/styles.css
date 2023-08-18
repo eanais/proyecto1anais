@@ -36,10 +36,12 @@ ul#menu{
 li.menu-item {
     padding: 16px;
     display: inline-block;
+    justify-content:space-between;
 }
 ul#contacto-links{
     display: flex;
     margin-top: 20px;
+    justify-content:space-between;
 }
 ul#contacto-links li{
     margin: 16px;
@@ -206,7 +208,7 @@ footer{
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
 main {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
 }
 /* Recomendaciones! 
@@ -226,3 +228,20 @@ main {
 *    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
 */
+@media (min-width: 1024px){
+    section #inicio
+    flex-direction: row;
+    article.presentation{
+        text-align: left;
+        width: 50%;
+        h1{
+            font-size: 48px;
+            text-align: left;
+        }
+    }
+}
+li.menu-item:hover{
+    background-color: #5f5f5f;
+    color: #fbfbfb;
+    transition: background color: 0.3s ;
+}
